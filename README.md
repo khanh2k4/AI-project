@@ -1,11 +1,24 @@
-Trợ lí ảo của tôi
+Hướng dẫn sử dụng ChatBot
+
+Đầu tiên, tạo file .env đặt các biến môi trường và APT key vào 
+VD:
+LIVEKIT_URL="..."
+LIVEKIT_API_SECRET="..."
+LIVEKIT_API_KEY="..."
+OPENAI_API_KEY="..."
+DEEPGRAM_API_KEY= "..."
 
 Lệnh cài môi trường ảo
-$ python -m venv env
-$ .\env\Scripts\activate
+python -m venv env
 
-Lệnh cài các module cần thiết
-$ pip install -r requirements.txt
+Kích hoạt môi trường ảo
+./env/Scripts/activate
+
+Lệnh cài các module cần thiết trong file requirements.txt
+pip install -r requirements.txt
+
+Run command
+python main.py start
 
 Link kết nối tới server livekit
 https://agents-playground.livekit.io/
